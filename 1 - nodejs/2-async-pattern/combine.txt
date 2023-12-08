@@ -1,0 +1,11 @@
+this is : rtsr twrythis is :   const second = await readFile('./content/second.txt', 'utf8')
+    await writeFile(
+      './content/result-mind-grenade.txt',
+      `THIS IS AWESOME : ${first} ${second}`,
+      { flag: 'a' }
+    )
+    console.log(first, second)
+  } catch (error) {
+    console.log(error)
+  }
+} twry

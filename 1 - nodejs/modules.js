@@ -1,0 +1,12 @@
+// CommonJS, every file is module (by default)
+// Modules - Encapsulated Code (only share minimum)
+const names = require('./names')
+const util = require('./utils')
+const data = require('./alternativefavor')
+
+console.log(names.john)
+require('./mind-grenade')
+util('susan')
+util(names.john)
+util(names.peter)
+console.log(data)
