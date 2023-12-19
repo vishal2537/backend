@@ -21,7 +21,11 @@ const port = process.env.PORT || 5000;
 
 const start = async () => {
   try {
-    // await connectDB(process.env.MONGO_URI);
+    url = process.env.MONGO_URI;
+    // await connectDB('mongodb://localhost:27017');
+    // url ='mongodb+srv://vishalprajapati21b:vishal.prajapati21b@nodejsexpressjsproject.mamblhq.mongodb.net/?retryWrites=true&w=majority';
+
+    await connectDB(url)
     app.listen(port, () =>
       console.log(`Server is listening on port ${port}...`)
     );
